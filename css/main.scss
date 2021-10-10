@@ -28,6 +28,11 @@ header{
     .container{
         max-width: 1000px;
     }
+    .call{
+        margin-left: 60px;
+        color: $primaryColor;
+        text-decoration: none;
+    }
     #header-city{
         border: none;
         color: $primaryColor;
@@ -57,7 +62,7 @@ header{
             color: $primaryColor;
             border: 2px solid $primaryColor;
             padding: 10px 30px;
-            margin-left: 30px;
+            margin-left: 60px;
             transition: all 0.3s;
             &:hover{
                 background: $primaryColor;
@@ -67,6 +72,80 @@ header{
         }
     }
     
+}
+
+.banner{
+    background-image: url("../img/Banner_1.jpg");
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    .banner-top-sub{
+        margin-bottom: 0;
+        font-size: 30px;
+        letter-spacing: 0.5px;
+    }
+    .banner-title{
+        font-size: 80px;
+        line-height: 70px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+    .search-form{
+        background: #fff;
+        padding: 0px 0px 0px 80px;
+        .br{
+            border-right: 1px solid #cccccc;
+        }
+        .form-group{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            label{
+                color: $primaryColor;
+                text-transform: uppercase ;
+                margin-bottom: 0;
+                font-family: 'TT Commons Medium';
+            }
+            .cities{
+                color: #cccccc;
+                width: 80%;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid #000;
+                padding: 5px 0;
+                font-size: 18px;
+                &::before{
+                    content: "\f002";
+                    font-family: "Font Awesome 5 Free";
+                    color: #cccccc;
+                    font-weight: 900;
+                }
+            }
+            .check-in{
+                border: none;
+                outline: none;
+                color: #cccccc;
+                font-size: 18px;
+                user-select: none;
+            }
+        }
+        .submit-btn{
+            height: 100%;
+            background: #242424;
+            border-radius: 0;
+            width: 100%;
+            transition: all 0.3s;
+            &:hover{
+                background: $primaryColor;
+            }
+            .icon{
+                color: #fff;
+                font-size: 25px;
+            }
+        }
+    }
 }
 
 .dwn-arw{
@@ -299,8 +378,6 @@ header{
             padding-left: 100px;
             padding-right: 50px;
             color: #fff;
-            .icon{
-            }
             .testi{
                 font-size: 16px;
                 margin: 30px 0;
@@ -328,10 +405,25 @@ footer{
     .footer-logo{
         width: 180px;
     }
+    .social-icons{
+        margin-top: 30px;
+        .anc{
+            display: inline-block;
+            &:nth-child(2n){
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            .icon{
+                color: $primaryColor;
+                font-size: 34px;
+                
+            }
+        }
+    }
     .footer-links{
         list-style: none;
         li{
-            font-size: 16px;
+            font-size: 14px;
             text-transform: uppercase;
             margin: 5px 0;
             a{
@@ -339,7 +431,7 @@ footer{
                 text-decoration: none;
             }
             &:first-child{
-                font-size: 16px;
+                font-size: 15px;
                 a{
                     color: $primaryColor;
                     text-decoration: none;
