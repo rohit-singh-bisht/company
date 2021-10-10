@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'TT Commons Regular';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'TT Commons Bold';
+}
+
+section {
+  padding: 60px 0;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .container {
+  max-width: 1000px;
+}
+
+header #header-city {
+  border: none;
+  color: #5eb54c;
+}
+
+header #header-city:focus {
+  border: none;
+}
+
+header #header-city:focus-visible {
+  border: none;
+  outline: none;
+}
+
+header .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .items .register {
+  margin-right: 30px;
+  border-bottom: 1px dotted #5eb54c;
+  display: inline-block;
+  color: #5eb54c;
+  margin: 10px 30px;
+}
+
+header .items .register:hover {
+  text-decoration: none;
+}
+
+header .items .login {
+  color: #5eb54c;
+  border: 2px solid #5eb54c;
+  padding: 10px 30px;
+  margin-left: 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .items .login:hover {
+  background: #5eb54c;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dwn-arw {
+  background: #f6f4f5;
+  padding: 20px;
+}
+
+.dwn-arw a {
+  display: inline-block;
+}
+
+.dwn-arw a .arw {
+  color: #5eb54c;
+  font-size: 22px;
+}
+
+.heading {
+  color: #5eb54c;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vac-rental .content {
+  font-family: 'TT Commons Light';
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.browse-by-loc {
+  background: #f6f4f5;
+  background-image: url("../img/Browse by location/BG.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.browse-by-loc .loc-box {
+  position: relative;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.browse-by-loc .loc-box::before {
+  content: "";
+  width: 90%;
+  height: 90%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.browse-by-loc .loc-box .items {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.browse-by-loc .loc-box .items .text {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-family: 'TT Commons Medium';
+}
+
+.browse-by-loc .loc-box .items .arw-right {
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.browse-by-loc .loc-box:hover .arw-right {
+  opacity: 1;
+}
+
+.browse-by-loc .loc-box:hover::before {
+  opacity: 1;
+}
+
+.items-with-BG {
+  background-image: url("../img/Banner_2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.items-with-BG .items-box {
+  text-align: center;
+}
+
+.items-with-BG .items-box .icon {
+  color: #fff;
+  font-size: 40px;
+}
+
+.items-with-BG .items-box .head {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.items-with-BG .items-box .sub-head {
+  font-family: 'TT Commons Light';
+  color: #000;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.why-olive .why-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.why-olive .why-box .text {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.delight-you {
+  background: #f6f4f5;
+}
+
+.delight-you .mt-min {
+  margin-top: -100px;
+}
+/*# sourceMappingURL=main.css.map */

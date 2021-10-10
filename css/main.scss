@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primaryColor : #5eb54c;
+$bgColor : #f6f4f5;
+
+body{
+    font-family: 'TT Commons Regular';
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'TT Commons Bold';
+}
+
+section{
+    padding: 60px 0;
+}
+
+header{
+    padding: 20px 0;
+    .container{
+        max-width: 1000px;
+    }
+    #header-city{
+        border: none;
+        color: $primaryColor;
+        &:focus{
+            border: none;
+        }
+        &:focus-visible{
+            border: none;
+            outline: none;
+        }
+    }
+
+    .items{
+        display: flex;
+        justify-content: flex-end;
+        .register{
+            margin-right: 30px;
+            border-bottom: 1px dotted $primaryColor;
+            display: inline-block;
+            color: $primaryColor;
+            margin: 10px 30px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .login{
+            color: $primaryColor;
+            border: 2px solid $primaryColor;
+            padding: 10px 30px;
+            margin-left: 30px;
+            transition: all 0.3s;
+            &:hover{
+                background: $primaryColor;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+.dwn-arw{
+    background: $bgColor;
+    padding: 20px;
+    a{
+        display: inline-block;
+        .arw{
+            color: $primaryColor;
+            font-size: 22px;
+        }
+    }
+}
+
+.heading{
+    color: $primaryColor;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vac-rental{
+    .content{
+        font-family: 'TT Commons Light';
+        font-size: 24px;
+        line-height: 32px;
+        color: #000;
+        text-align: center;
+    }
+}
+
+.browse-by-loc{
+    background: $bgColor;
+    background-image: url("../img/Browse\ by\ location/BG.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .loc-box{
+        position: relative;
+        cursor: pointer;
+        margin-top: 30px;
+        &::before{
+            content: "";
+            width: 90%;
+            height: 90%;
+            border: 2px solid #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s;
+            opacity: 0;
+        }
+        .items{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            .text{
+                color: #fff;
+                margin-bottom: 0;
+                font-size: 18px;
+                font-family: 'TT Commons Medium';
+            }
+            .arw-right{
+                color: #fff;
+                opacity: 0;
+                transition: all 0.3s;
+            }
+        }
+        &:hover{
+            .arw-right{
+                opacity: 1;
+            }
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.items-with-BG{
+    background-image: url("../img/Banner_2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .items-box{
+        text-align: center;
+        .icon{
+            color: #fff;
+            font-size: 40px;
+        }
+        .head{
+            color: #fff;
+            font-size: 45px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+        .sub-head{
+            font-family: 'TT Commons Light';
+            color: #000;
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+}
+
+.why-olive{
+    .why-box{
+        text-align: center;
+        margin-top: 30px;
+        .text{
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
+
+.delight-you{
+    background: $bgColor;
+
+    .mt-min{
+        margin-top: -100px;
+    }
+}
